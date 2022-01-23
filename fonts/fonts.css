@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Baloo Bhai';
+    src: url('BalooBhai-Regular.eot');
+    src: local('Baloo Bhai'), local('BalooBhai-Regular'),
+        url('BalooBhai-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BalooBhai-Regular.woff2') format('woff2'),
+        url('BalooBhai-Regular.woff') format('woff'),
+        url('BalooBhai-Regular.svg#BalooBhai-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('MyriadPro-Regular.eot');
+    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Regular.woff') format('woff'),
+    url('MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
