@@ -1,4 +1,4 @@
-# yoga
+# Yoga
 Yoga site
 Work still in progress
 
