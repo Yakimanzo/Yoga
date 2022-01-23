@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+section{
+    height: 100vh;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Head */
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .logo{
+    background-color: #a7d7c5;
+    padding: 24px 10px;
+    margin-left: 30px;
+}
+
+.head nav{
+    background-color: #e2ede8;
+    width: 100%;
+    padding-left: 557px;
+}
+
+.head .menu{
+    display: flex;
+    height: 46px;
+    align-items: center;
+}
+
+.head .menu a{
+    color: #494f4e;
+    font-size: 20.7px;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+}
+
+
+.head .menu li:hover{
+    background-color: #a7d7c5;
+    transition-duration: 0.8s;
+}
+
+.head .menu li{
+    padding: 7px 38px;
+}
+
+
+/* Main */
+
+.main{
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+/* Main Image*/
+
+.main .main_image{
+    position: relative;
+    width: 50%;
+}
+
+.main_image img:first-child{
+    position: absolute;
+    left: -80px;
+    top: -20px;
+    z-index: 0;
+}
+
+.main_image img:first-child{
+    animation: 50s linear 0s normal none infinite running shape;
+}
+
+@keyframes shape{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_image img:last-child{
+    position: absolute;
+    border-radius: 200px;
+    border: 5px solid #bed2ce;
+    top: 110px;
+    left: 60px;
+}
+
+
+
+/*Main Text*/
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.main_text h1{
+    font-size: 96px;
+    color: #6c9894;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+}
+
+.main_text span{
+    font-size: 20px;
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_text button{
+    background-color: #6c9894;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    margin-top: 34px;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.main_text button:hover{
+    background-color: #fff;
+    color: #6c9894;
+    transition-duration: 0.5s;
+    border: 1px solid #6c9894;
+}
+
+/* Картинка между секциями*/
+
+.image_between{
+    position: relative;
+    
+}
+
+.image_between img{
+    position: absolute;
+    top: -305px;
+    left: 1190px;
+}
+
+/* Секция с выбором класса */
+
+.green{
+    background-color: #529995;
+    height: 100vh;  
+}
+
+.grid_class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 50px;
+}
+
+.grid_class .class_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.class_text h2{
+    font-size: 75px;
+    font-family: 'Baloo Bhai';
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.class_text span{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+
+.choose_class img{
+    border-radius: 200px;
+    width: 250px;
+    position: relative;
+    z-index: 1; 
+}
+
+
+.choose_class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.choose_class::before{
+    content: '';
+    position: absolute;
+    background: url(../img/shape2.png)no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 100%;
+    top: -25px;
+}
+
+.choose_class h3{
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.choose_class span{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Секция статистики */
+
+.girl_bg{
+    position: relative;
+    background: url(../img/girl-bg.png)no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.girl_bg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(238, 238, 238, 0.5);
+    z-index: 2;
+}
+
+.girl_bg img{
+    position: absolute;
+    top: -80px;
+    left: -50px;
+    z-index: 3;
+}
+
+.grid_stats{
+    position: relative;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 113px;
+    grid-row-gap: 130px;
+}
+
+.stats_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stats_text h2{
+    color: #6c9894;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+}
+
+.stats_text span{
+    text-align: center;
+    font-size: 30px;
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stat, .stat_1{
+    border: 5px solid #6c9894;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 40px;
+}
+
+.stat p{
+    font-size: 66px;
+    color: #6c9894;
+    font-family: 'Baloo Bhai';
+}
+
+.stat span{
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c9894;
+    text-align: center;
+}
+
+.stat_1 p{
+    font-size: 66px;
+    color: #6c9894;
+    font-family: 'Myriad Pro Regular';
+    margin-top: 15px;
+}
+
+.stat_1 span{
+    font-family: 'Myriad Pro Regular';
+    color: #6c9894;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Секция с инструктором*/
+
+.instructor{
+    background: url(../img/girl5.jpg) no-repeat right, #529995;
+    background-size: 45% auto;
+}
+
+.instr{
+    display: flex;
+}
+
+.text_instr{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.text_instr h2{
+    margin-top: 150px;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+    line-height: 83px;
+}
+
+.text_instr span{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 34px;
+}
+
+.text_instr button{
+    font-size: 25px;
+    color: #529995;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin-top: 55px;
+    padding: 27px 97px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Baloo Bhai';
+}
+
+.text_instr button:hover{
+    color: #fff;
+    background-color: #529995;
+    transition-duration: 1s;
+    border: 1px solid #fff;
+}
+
+
+/* Секция с опытом */
+
+.exp_img img{
+    width: 477px;
+    height: 590px;
+    margin-top: 100px;
+}
+
+.exp{
+    display: flex;
+}
+
+.exp_text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+    margin-top: 180px;
+    margin-left: 160px;
+}
+
+.exp_text h2{
+    font-size: 75px;
+    color: #6c9894;
+    font-family: 'Baloo Bhai';
+    line-height: 83px;
+    text-transform: uppercase;
+}
+
+.exp_text span{
+    margin-top: 58px;
+    font-size: 30px;
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.exp_text button{
+    font-size: 25px;
+    color: #fff;
+    background-color: #529995;
+    border: none;
+    cursor: pointer;
+    font-family: 'Baloo Bhai';
+    text-transform: uppercase;
+    padding: 27px 97px;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.exp_text button:hover{
+    background-color: #fff;
+    color: #6c9894;
+    transition-duration: 1s;
+    border: 1px solid #529995;
+}
+
+
+/* Секция с ценами */
+
+.pricing{
+    background-color: #529995;
+}
+
+.grid_price{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 50px;
+}
+
+.price_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.price_text h2{
+    font-size: 75px;
+    color: #fff;
+    font-family: 'Baloo Bhai';
+}
+
+.price_text span{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.price:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition-duration: 0.8s;
+}
+
+.price h3{
+    font-size: 36px;
+    color: #529995;
+    text-transform: uppercase;
+    font-family: 'Baloo Bhai';
+}
+
+.price span{
+    color: #529995;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.price button{
+    font-size: 25px;
+    color: #fff;
+    background-color: #529995;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-family: 'Baloo Bhai';
+    text-transform: uppercase;
+    padding: 0px 20px;
+    margin-top: 35px;
+    margin-bottom: 27px;
+    border-radius: 5px; 
+}
+
+.price button:hover{
+    border: 1px solid #529995;
+    color: #529995;
+    background-color: #fff;
+    transition-duration: 1s;
+}
+
+/* Секция с тренером */
+
+.devadra{
+    background: url(../img/yogagirl.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.trainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer img{
+    border-radius: 200px;
+    margin-top: 110px;
+    border: 4px solid #529995;
+    position: relative;
+}
+
+.trainer img::before{
+    content: '';
+    position: absolute;
+    background: url(../img/shape2.png) no-repeat;
+}
+
+
+
+
+
+
+
+
